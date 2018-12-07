@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'color/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'color/style.css' %}">
+    <script type="text/javascript" src="{% static 'color/color.js' %}"></script>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<header>
+    <div id="cite_name">
+        <a href="{% url 'color_list' %}">Color Web</a>
+    </div>
+    <nav id="top_menu">
+        <ul>
+            <li><a href="{% url 'color_list' %}">色一覧</a></li>
+            <li><a href="{% url 'new_color' %}">色追加</a></li>
+            <li><a href="{% url 'question_start' %}">色当てゲーム</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+{% block content %}
+{% endblock %}
+</main>
+<footer><small>2018</small></footer>
+</body>
+</html>

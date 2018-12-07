@@ -1,0 +1,31 @@
+{% extends 'color/base.html' %}
+{% block title %}色一覧{% endblock %}
+{% block content %}
+<article>
+    <h1>カラーリスト</h1>
+    <section>
+        <div id="background_color_button">
+            背景色を…
+            <input type="button" value="黒色に変更する" onclick="changeBoxColor('#000000');">
+            <input type="button" value="灰色に変更する" onclick="changeBoxColor('#808080');">
+            <input type="button" value="白色に戻す" onclick="changeBoxColor('#ffffff');">
+        </div>
+        <form>
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="検索">
+        </form>
+    </section>
+    <section class="color_sample">
+        <ul class="color_list">
+            {% for color in colors %}
+            <li>
+                <div class = "color_box hover_effect" style="background-color: {{ color.code }};" title="{{ color.name }}">
+                    <a href="{% url 'color_detail' color.id %}" ></a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</article>
+{% endblock %}

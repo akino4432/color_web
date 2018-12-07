@@ -1,0 +1,29 @@
+{% extends 'color/base.html' %}
+{% block title %}成績{% endblock %}
+{% block content %}
+<article id="quiz">
+    <h1>色当て問題　結果</h1>
+    <section>
+        <p>難易度：{{ difficulty }}</p>
+        <table>
+            <tr>
+                <th>正解</th><th>解答</th><th>正誤</th>
+            </tr>
+            {% for result in results %}
+            <tr>
+                <td><a href="{% url 'color_detail' result.q_color.id %}">{{ result.q_color.name }}</a></td>
+                <td><a href="{% url 'color_detail' result.c_color.id %}">{{ result.c_color.name }}</a></td>
+                {% if result.correct %}
+                <td>〇</td>
+                {% endif %}
+                {% if not result.correct %}
+                <td>×</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </table>
+        <p>正答率 {{ score }} %</p>
+    </section>
+    <p><a href="{% url 'question_start' %}">もう一度遊ぶ</a></p>
+</article>
+{% endblock %}

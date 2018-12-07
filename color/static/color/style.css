@@ -1,0 +1,287 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #d3cbc6;  /* 枯野色 */
+    font-size: 1.6rem;
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+}
+
+p {
+    margin: 1.6rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2ca9e1;
+}
+
+a:visited {
+    color: #2ca9e1;
+}
+
+aside {
+    margin: 2rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+    padding-left: 12px;
+    border-left: solid 6px pink;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 16px 0;
+    margin-left: 8px;
+    border-bottom: solid 2px royalblue;
+}
+
+table, td, th {
+    border-collapse: collapse;
+    border: solid 1px gray;
+}
+
+td, th {
+    height: 24px;
+    padding: 4px 6px;
+}
+
+#note{
+    width: 300px;
+    height: 200px;
+}
+
+/* header */
+header{
+    background-color: #17184b;  /* 鉄紺 */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+header a {
+    color: white;
+}
+
+header a:visited{
+    color: white;
+}
+
+#cite_name {
+    display: flex;
+    width: 200px;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+/* TOP MENU */
+#top_menu{
+}
+
+#top_menu ul {
+    display: flex;
+    height: 100%;
+}
+
+#top_menu ul li {
+
+    width: 120px;
+    height: 100%;
+    border-left: solid 1px #bbbcde;
+}
+
+#top_menu a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top_menu a:hover {
+    background-color: #4c6cb3;  /* 群青色 */
+    box-shadow: -3px -2px 0px rgba(0,0,64,0.4) inset;
+}
+
+/* end_header */
+
+footer{
+    background-color: #17184b;  /* 鉄紺 */
+    color: ghostwhite;
+    text-align: center;
+}
+
+/* main */
+main{
+    background-color: white;
+    margin: 0 60px;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.6) inset;
+}
+
+#background_color_button {
+    margin: 16px 0;
+}
+
+#edit_delete {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding-left: 47px;
+}
+
+#edit_delete span {
+    margin: 1rem;
+}
+
+form {
+    margin: 16px 0;
+}
+
+form label {
+
+}
+
+.color_sample {
+    border-radius: 2px;
+}
+
+section.color_sample {
+    padding: 16px 20px;
+}
+
+#color_detail > div {
+    margin: 0 46px;
+}
+
+div.color_sample {
+    padding: 40px 50px;
+    border: solid 1px gray;
+}
+
+ul.color_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.color_list li {
+    margin: 10px 8px;
+}
+
+div.color_box {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.hover_effect:hover {
+    position: relative;
+    top: -2px;
+    left: -2px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+div.color_box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#color_detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#similar_list {
+    width: 240px;
+    height: 130px;
+    border: solid 1px gray;
+    border-radius: 5px;
+}
+
+#similar_list:hover {
+    background-color: #F8F8F8;
+}
+
+#similar_list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+#similar_list a:visited {
+    color: black;
+}
+
+#color_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 100px;
+    margin-left: 1rem;
+}
+
+#large_box {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* 問題画面 */
+#quiz {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#quiz h1 {
+    margin-bottom: 40px;
+}
+
+#quiz .color_sample {
+    width: 282px;
+    height: 262px;
+}
+
+#quiz .color_sample .color_box{
+    width: 180px;
+    height: 180px;
+}
+
+#quiz > section {
+    width : 400px;
+    margin: 40px auto;
+}
+
+#choices {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#choices > div {
+    width: 180px;
+    height: 3rem;
+}
+
+#interrupt {
+    margin-top: 3rem;
+}
+
+#answer div{
+    margin-left: 1rem;
+}
+
+p.detail {
+    margin-left: 1rem;
+    margin-top: 2px;
+}

@@ -1,0 +1,31 @@
+{% extends 'color/base.html' %}
+{% block title %}色当て問題{% endblock %}
+{% block content %}
+<article id="quiz">
+    <h1>色当て問題第{{ now }}問</h1>
+    <div id="background_color_button">
+        背景色を
+        <input type="button" value="黒色に変更" onclick="changeBoxColor('#000000');">
+        <input type="button" value="灰色に変更" onclick="changeBoxColor('#808080');">
+        <input type="button" value="白色に戻す" onclick="changeBoxColor('#ffffff');">
+    </div>
+    <section>
+        <div class="color_sample">
+            <div class="color_box" style="background-color: {{ q_color.code }};"></div>
+        </div>
+        <form method="post" action="{% url 'processing' %}">
+            {% csrf_token %}
+            <div id="choices">
+                {% for choice in choices %}
+                <div><input type="radio" name="question" value="{{ choice.id }}" id="{{ choice.id }}" required>
+                    <label for="{{ choice.id }}">{{ choice.name }}</label>
+                </div>
+                {% endfor %}
+            </div>
+            <input type="hidden" name="check" value="{{ now }}">
+            <input type="submit" value="解答">
+        </form>
+        <p id="interrupt"><a href="{% url 'question_start' %}">中断する</a></p>
+    </section>
+</article>
+{% endblock %}

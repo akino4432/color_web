@@ -1,0 +1,46 @@
+{% extends 'color/base.html' %}
+{% block title %}{{ color.name }}{% endblock %}
+{% block content %}
+<article>
+    <h1 style="border-left: solid 6px {{ color.code }};">{{ color.name }}</h1>
+    <section>
+        <div id="background_color_button">
+            背景色を…
+            <input type="button" value="黒色に変更する" onclick="changeBoxColor('#000000');">
+            <input type="button" value="灰色に変更する" onclick="changeBoxColor('#808080');">
+            <input type="button" value="白色に戻す" onclick="changeBoxColor('#ffffff');">
+        </div>
+    </section>
+    <section id="color_detail">
+        <div class="color_sample">
+            <div id="large_box" style="background-color: {{ color.code }};"></div>
+        </div>
+        <div>
+            <h2>詳細</h2>
+            <table>
+                <tr><td>{{ color.name }}</td></tr>
+                <tr><td>{{ color.code }}（{{ rgb }}）</td></tr>
+                <tr><td>{{ color.lang }}</td></tr>
+                <tr><td id="note">{{ color.note }}</td></tr>
+            </table>
+        </div>
+    </section>
+    <section id="edit_delete">
+        <span><a href="{% url 'edit_color' color.id %}" >編集</a></span>
+        <span><a href="{% url 'delete_color' color.id %}">削除</a></span>
+    </section>
+</article>
+<aside>
+    <h2>類似色</h2>
+    <ul class="color_list">
+        {% for s in similar %}
+        <li id="similar_list" class="hover_effect">
+            <a href="{% url 'color_detail' s.id %}" >
+                <div class = "color_box" style="background-color: {{ s.code }};"></div>
+                <div id="color_name">{{ s.name }}</div>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</aside>
+{% endblock %}

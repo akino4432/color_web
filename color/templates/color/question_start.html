@@ -1,0 +1,17 @@
+{% extends 'color/base.html' %}
+{% block title %}スタート画面{% endblock %}
+{% block content %}
+<article id="quiz">
+    <h1>色当て問題スタート画面</h1>
+    <section>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit", value="スタート" />
+        </form>
+        {% if interrupted_data %}
+        <p id="interrupt"><a href="{% url 'question' %}">中断した問題から開始</a></p>
+        {% endif %}
+    </section>
+</article>
+{% endblock %}
