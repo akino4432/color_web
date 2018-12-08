@@ -3,12 +3,6 @@ from django import forms
 from color.models import Color, Lang
 
 
-class ColorForm(forms.ModelForm):
-    class Meta:
-        model = Color
-        fields = ('name', 'code', 'lang', 'note',)
-
-
 class SearchForm(forms.Form):
     name = forms.CharField(label='色名', required=False)
     lang = forms.ModelChoiceField(queryset=Lang.objects.all(), label='言語', required=False)

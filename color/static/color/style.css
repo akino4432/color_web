@@ -130,17 +130,6 @@ main{
     margin: 16px 0;
 }
 
-#edit_delete {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    padding-left: 47px;
-}
-
-#edit_delete span {
-    margin: 1rem;
-}
-
 form {
     margin: 16px 0;
 }
@@ -158,11 +147,11 @@ section.color_sample {
 }
 
 #color_detail > div {
-    margin: 0 46px;
+    margin: 0 20px;
 }
 
 div.color_sample {
-    padding: 40px 50px;
+    padding: 30px 36px;
     border: solid 1px gray;
 }
 
@@ -233,8 +222,8 @@ div.color_box a {
 }
 
 #large_box {
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
     border-radius: 10px;
 }
 

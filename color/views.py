@@ -5,7 +5,7 @@ from django.urls import reverse
 from django.views.decorators.http import require_POST
 
 from color.models import Color
-from color.forms import ColorForm, SearchForm, QuestionConditions
+from color.forms import SearchForm, QuestionConditions
 from color.modules import RGBColor, OrderColor, get_random_colors, create_choices
 
 
@@ -39,48 +39,6 @@ def color_detail(request, color_id):
     similar = similar_color_list[1:11]  # 0は同色
 
     return TemplateResponse(request, 'color/color_detail.html', {'color': color, 'rgb': str(rgb), 'similar': similar})
-
-
-def new_color(request):
-    if request.method == 'POST':
-        form = ColorForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect(reverse('color_list'))
-
-    else:
-        form = ColorForm()
-    return TemplateResponse(request, 'color/new_color.html', {'form': form})
-
-
-def edit_color(request, color_id):
-    try:
-        color = Color.objects.get(id=color_id)
-    except Color.DoesNotExist:
-        raise Http404
-
-    if request.method == 'POST':
-        form = ColorForm(request.POST, instance=color)
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect(reverse('color_detail', args=(color_id,)))
-
-    else:
-        form = ColorForm(instance=color)
-    return TemplateResponse(request, 'color/edit_color.html', {'color': color, 'form': form})
-
-
-def delete_color(request, color_id):
-    try:
-        color = Color.objects.get(id=color_id)
-    except Color.DoesNotExist:
-        raise Http404
-
-    if request.method == 'POST':
-        color.delete()
-        return HttpResponseRedirect(reverse('color_list'))
-
-    return TemplateResponse(request, 'color/delete_color.html', {'color': color})
 
 
 def question_start(request):
