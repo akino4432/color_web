@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b7d73b0f-a633-48f3-a205-d9141e52fc10" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/color/forms.py" afterPath="$PROJECT_DIR$/color/forms.py" />
-      <change beforePath="$PROJECT_DIR$/color/static/color/style.css" afterPath="$PROJECT_DIR$/color/static/color/style.css" />
-      <change beforePath="$PROJECT_DIR$/color/templates/color/base.html" afterPath="$PROJECT_DIR$/color/templates/color/base.html" />
-      <change beforePath="$PROJECT_DIR$/color/templates/color/color_detail.html" afterPath="$PROJECT_DIR$/color/templates/color/color_detail.html" />
-      <change beforePath="$PROJECT_DIR$/color/templates/color/color_list.html" afterPath="$PROJECT_DIR$/color/templates/color/color_list.html" />
-      <change beforePath="$PROJECT_DIR$/color/templates/color/delete_color.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/color/templates/color/edit_color.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/color/templates/color/new_color.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/color/urls.py" afterPath="$PROJECT_DIR$/color/urls.py" />
-      <change beforePath="$PROJECT_DIR$/color/views.py" afterPath="$PROJECT_DIR$/color/views.py" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +17,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/color/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            <state relative-caret-position="0">
+              <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -37,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/color/templates/color/color_list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -53,12 +44,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/color/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="352">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
+                <element signature="e#0#53#0" expanded="true" />
                 <element signature="e#417#900#0" expanded="false" />
                 <element signature="e#944#1354#0" expanded="false" />
                 <element signature="e#1390#2372#0" expanded="false" />
@@ -66,6 +58,18 @@
                 <element signature="e#2985#3964#0" expanded="false" />
                 <element signature="e#3992#4592#0" expanded="false" />
                 <element signature="e#4620#5209#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="77" column="63" lean-forward="false" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
+              <folding>
+                <element signature="e#307#316#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,8 +88,8 @@
       <file leaf-file-name="color_detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/color/templates/color/color_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="15" column="82" lean-forward="true" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+            <state relative-caret-position="330">
+              <caret line="15" column="82" lean-forward="false" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#article#0;n#!!top" expanded="true" />
               </folding>
@@ -96,8 +100,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/color/static/color/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="152" column="18" lean-forward="true" selection-start-line="152" selection-start-column="18" selection-end-line="152" selection-end-column="18" />
+            <state relative-caret-position="3344">
+              <caret line="152" column="18" lean-forward="false" selection-start-line="152" selection-start-column="18" selection-end-line="152" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -136,7 +140,6 @@
         <option value="$PROJECT_DIR$/color/templates/color/edit_color.html" />
         <option value="$PROJECT_DIR$/color/static/color/color.js" />
         <option value="$PROJECT_DIR$/color/templates/color/qustion.html" />
-        <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/color/models.py" />
         <option value="$PROJECT_DIR$/color/modules.py" />
         <option value="$PROJECT_DIR$/color/templates/color/result.html" />
@@ -150,10 +153,11 @@
         <option value="$PROJECT_DIR$/color/templates/color/color_list.html" />
         <option value="$PROJECT_DIR$/color/templates/color/color_detail.html" />
         <option value="$PROJECT_DIR$/color/static/color/style.css" />
+        <option value="$PROJECT_DIR$/mysite/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="22" />
     <option name="width" value="1346" />
@@ -176,6 +180,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,7 +228,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +293,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.136875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -325,38 +329,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/color/templates/color/color_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/color/templates/color/delete_color.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/color/templates/color/delete_color.html" />
     <entry file="file://$PROJECT_DIR$/color/modules.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-            <element signature="e#133#190#0" expanded="false" />
-            <element signature="e#271#793#0" expanded="false" />
-            <element signature="e#848#1000#0" expanded="false" />
-            <element signature="e#1058#1218#0" expanded="false" />
-            <element signature="e#1251#1287#0" expanded="false" />
-            <element signature="e#1323#2276#0" expanded="false" />
-            <element signature="e#2316#2798#0" expanded="false" />
-            <element signature="e#2831#2897#0" expanded="false" />
-            <element signature="e#2993#3488#0" expanded="false" />
-            <element signature="e#3564#4135#0" expanded="false" />
-            <element signature="e#4213#5136#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -380,6 +357,7 @@
         <state relative-caret-position="110">
           <caret line="10" column="81" lean-forward="true" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="81" />
           <folding>
+            <element signature="e#0#53#0" expanded="true" />
             <element signature="e#417#900#0" expanded="false" />
             <element signature="e#944#1354#0" expanded="false" />
             <element signature="e#1390#2372#0" expanded="false" />
@@ -403,6 +381,7 @@
         <state relative-caret-position="1144">
           <caret line="58" column="32" lean-forward="true" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
           <folding>
+            <element signature="e#0#53#0" expanded="true" />
             <element signature="e#417#900#0" expanded="false" />
             <element signature="e#944#1354#0" expanded="false" />
             <element signature="e#1390#2372#0" expanded="false" />
@@ -443,13 +422,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/color/templates/color/delete_color.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/color/templates/color/delete_color.html" />
     <entry file="file://$PROJECT_DIR$/color/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -462,6 +435,7 @@
         <state relative-caret-position="264">
           <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding>
+            <element signature="e#0#53#0" expanded="true" />
             <element signature="e#417#900#0" expanded="false" />
             <element signature="e#944#1354#0" expanded="false" />
             <element signature="e#1390#2372#0" expanded="false" />
@@ -473,20 +447,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/color/templates/color/edit_color.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/color/templates/color/new_color.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/color/templates/color/edit_color.html" />
+    <entry file="file://$PROJECT_DIR$/color/templates/color/new_color.html" />
     <entry file="file://$PROJECT_DIR$/color/templates/color/color_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -535,6 +497,7 @@
         <state relative-caret-position="44">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
+            <element signature="e#0#53#0" expanded="true" />
             <element signature="e#417#900#0" expanded="false" />
             <element signature="e#944#1354#0" expanded="false" />
             <element signature="e#1390#2372#0" expanded="false" />
@@ -611,13 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="54" column="75" lean-forward="false" selection-start-line="54" selection-start-column="75" selection-end-line="54" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/color/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -629,14 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#p#1;n#section#0;n#section#0;n#article#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#section#0;n#section#0;n#article#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#p#4;n#section#0;n#section#0;n#article#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#section#0;n#section#0;n#article#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#p#6;n#section#0;n#section#0;n#article#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#section#0;n#section#0;n#article#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -644,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,9 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#article#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,47 +613,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="681">
           <caret line="197" column="51" lean-forward="false" selection-start-line="197" selection-start-column="51" selection-end-line="197" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-            <element signature="e#133#190#0" expanded="false" />
-            <element signature="e#271#793#0" expanded="false" />
-            <element signature="e#848#1000#0" expanded="false" />
-            <element signature="e#1058#1218#0" expanded="false" />
-            <element signature="e#1251#1287#0" expanded="false" />
-            <element signature="e#1323#2276#0" expanded="false" />
-            <element signature="e#2316#2798#0" expanded="false" />
-            <element signature="e#2831#2897#0" expanded="false" />
-            <element signature="e#2993#3488#0" expanded="false" />
-            <element signature="e#3564#4135#0" expanded="false" />
-            <element signature="e#4213#5136#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/color/templates/color/delete_color.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/color/templates/color/edit_color.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/color/templates/color/new_color.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/color/templates/color/delete_color.html" />
+    <entry file="file://$PROJECT_DIR$/color/templates/color/edit_color.html" />
+    <entry file="file://$PROJECT_DIR$/color/templates/color/new_color.html" />
     <entry file="file://$PROJECT_DIR$/color/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -721,8 +629,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/color/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        <state relative-caret-position="0">
+          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -730,23 +638,23 @@
     <entry file="file://$PROJECT_DIR$/color/templates/color/color_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/color/static/color/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="152" column="18" lean-forward="true" selection-start-line="152" selection-start-column="18" selection-end-line="152" selection-end-column="18" />
+        <state relative-caret-position="3344">
+          <caret line="152" column="18" lean-forward="false" selection-start-line="152" selection-start-column="18" selection-end-line="152" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/color/templates/color/color_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="82" lean-forward="true" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+        <state relative-caret-position="330">
+          <caret line="15" column="82" lean-forward="false" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#article#0;n#!!top" expanded="true" />
           </folding>
@@ -763,9 +671,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/color/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="352">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
+            <element signature="e#0#53#0" expanded="true" />
             <element signature="e#417#900#0" expanded="false" />
             <element signature="e#944#1354#0" expanded="false" />
             <element signature="e#1390#2372#0" expanded="false" />
@@ -773,6 +682,24 @@
             <element signature="e#2985#3964#0" expanded="false" />
             <element signature="e#3992#4592#0" expanded="false" />
             <element signature="e#4620#5209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="77" column="63" lean-forward="false" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
+          <folding>
+            <element signature="e#307#316#0" expanded="true" />
           </folding>
         </state>
       </provider>

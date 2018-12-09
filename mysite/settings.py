@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from socket import gethostname
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'gsm&7b0h=amg7a!(bw7$^jsx6_o^kg@b!hv(ck*8&=_24=%2$s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# 下記
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -76,12 +77,21 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+HOSTNAME = gethostname()
+# ローカル環境
+if "akira-PC" in HOSTNAME:
+    DEBUG = True
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
+# Heroku環境
+else:
+    DEBUG = False
+    import django_heroku
+    django_heroku.settings(locals())
 
 
 # Password validation
