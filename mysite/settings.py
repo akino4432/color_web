@@ -28,7 +28,6 @@ SECRET_KEY = 'gsm&7b0h=amg7a!(bw7$^jsx6_o^kg@b!hv(ck*8&=_24=%2$s'
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -92,6 +91,7 @@ else:
     DEBUG = False
     import django_heroku
     django_heroku.settings(locals())
+
 
 
 # Password validation
