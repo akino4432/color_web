@@ -133,10 +133,6 @@ form {
     margin: 16px 0;
 }
 
-form label {
-
-}
-
 .color_sample {
     border-radius: 2px;
 }
@@ -150,6 +146,9 @@ section.color_sample {
 }
 
 div.color_sample {
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
     padding: 30px 36px;
     border: solid 1px gray;
 }
@@ -221,14 +220,14 @@ div.color_box a {
 }
 
 #large_box {
-    width: 260px;
-    height: 260px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 
 /* 問題画面 */
 #quiz {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -237,17 +236,19 @@ div.color_box a {
 }
 
 #quiz .color_sample {
-    width: 282px;
+    width: 100%;
+    max-width: 282px;
     height: 262px;
 }
 
 #quiz .color_sample .color_box{
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    height: 100%;
 }
 
 #quiz > section {
-    width : 400px;
+    width: 100%;
+    max-width : 282px;
     margin: 40px auto;
 }
 
@@ -257,8 +258,15 @@ div.color_box a {
 }
 
 #choices > div {
-    width: 180px;
-    height: 3rem;
+    width: 50%;
+    height: 4rem;
+}
+
+#answer_submit {
+    display: block;
+    width: 80px;
+    height: 40px;
+    margin: 20px auto;
 }
 
 #interrupt {
@@ -278,5 +286,16 @@ p.detail {
   /* スマホ用のスタイル */
 #cite_name {
     margin: 0px;
+}
+#top_menu ul li {
+    width: 110px;
+}
+main{
+    margin: 0;
+    padding: 20px 20px;
+    box-shadow: none;
+}
+section.color_sample {
+    padding: 0;
 }
 }

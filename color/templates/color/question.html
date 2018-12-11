@@ -23,7 +23,7 @@
                 {% endfor %}
             </div>
             <input type="hidden" name="check" value="{{ now }}">
-            <input type="submit" value="解答">
+            <input type="submit" id="answer_submit" value="解答">
         </form>
         <p id="interrupt"><a href="{% url 'question_start' %}">中断する</a></p>
     </section>

@@ -4,7 +4,7 @@ from color.models import Color, Lang
 
 
 class SearchForm(forms.Form):
-    name = forms.CharField(label='色名', required=False)
+    name = forms.CharField(label='色名', widget=forms.TextInput(attrs={'size': 10}), required=False)
     lang = forms.ModelChoiceField(queryset=Lang.objects.all(), label='言語', required=False)
 
 
