@@ -71,7 +71,6 @@ header a {
 header a:visited{
     color: white;
 }
-
 #cite_name {
     display: flex;
     width: 200px;
@@ -273,4 +272,11 @@ div.color_box a {
 p.detail {
     margin-left: 1rem;
     margin-top: 2px;
+}
+
+@media screen and (max-width: 500px) {
+  /* スマホ用のスタイル */
+#cite_name {
+    margin: 0px;
+}
 }
