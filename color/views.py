@@ -149,6 +149,9 @@ def answer(request):
 
 
 def result(request):
+    if not request.session.get('results'):
+        return HttpResponseRedirect(reverse('question_start'))
+
     if request.session.get('now'):
         del request.session['now']
 
@@ -157,13 +160,14 @@ def result(request):
     difficulty = difficulty_dict[difficulty]
 
     results = request.session['results']
+    number = len(results)
 
     # 点数計算
     correct_count = 0
     for result in results:
         if result['correct']:
             correct_count += 1
-    score = round((correct_count / request.session['number']) * 100)
+    score = round((correct_count / number) * 100)
 
     context = {'results': results, 'difficulty': difficulty, 'score': score}
     return TemplateResponse(request, 'color/result.html', context)

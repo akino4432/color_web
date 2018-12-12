@@ -10,4 +10,4 @@ class SearchForm(forms.Form):
 
 class QuestionConditions(forms.Form):
     number = forms.IntegerField(label='問題数', max_value=30, min_value=1, initial=5, required=True)
-    difficulty = forms.ChoiceField(label='難易度', choices=[(1, '難'), (2, '中'), (3, '易')], initial=2, required=True)
+    difficulty = forms.ChoiceField(label='難易度', choices=[('1', '難'), ('2', '中'), ('3', '易')], initial=2, required=True)

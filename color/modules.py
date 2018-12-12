@@ -187,12 +187,12 @@ def get_random_colors(num):
     return color_list
 
 
-def create_choices(color, difficulty=2):
+def create_choices(color, difficulty='2'):
     similar_colors = OrderColor.order_by_similar(Color.objects.all(), color)
     correct_color = similar_colors[0]
-    if difficulty == 3:
+    if difficulty == '1':
         choices = random.sample(similar_colors[2:7], 3)
-    elif difficulty == 2:
+    elif difficulty == '2':
         choices = random.sample(similar_colors[4:9], 3)
     else:
         choices = random.sample(similar_colors[6:11], 3)
@@ -200,11 +200,3 @@ def create_choices(color, difficulty=2):
     choices.append(correct_color)
     random.shuffle(choices)
     return choices
-
-
-if __name__ == '__main__':
-    TEST_CODE = '#ffffff'
-    TEST_DIC = {'r': 230, 'g': 255, 'b': 0}
-    rgb_color1 = RGBColor(**TEST_DIC)
-    rgb_color2 = RGBColor(code=TEST_CODE)
-    print(rgb_color1.categorize(), rgb_color2.categorize())
